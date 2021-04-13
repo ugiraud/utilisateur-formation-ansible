@@ -27,7 +27,9 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - { role: ugiraud.utilisateur-formation-ansible, suffixe_utilisateur: 1 }
+        - name: ugiraud.utilisateur_formation_ansible
+          vars:
+            suffixe_utilisateur: 1
 
 License
 -------
