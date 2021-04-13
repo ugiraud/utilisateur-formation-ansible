@@ -1,0 +1,7 @@
+---
+# tasks file for utilisateur-formation-ansible
+- name: Création de l'utilisateur de formation
+  user:
+    name: "formation-{{ suffixe_utilisateur }}"
+    comment: Utilisateur de formation
+    uid: "{{ uid_utilisateur | default(2500) }}"
